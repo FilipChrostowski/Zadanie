@@ -48,11 +48,7 @@ class Tenant(BaseModel):
         return {key: Tenant(**tenant) for key, tenant in data.items()}  
     
     
-    class Bill(BaseModel):
-        kwota: float
-        data: str
-        typ_rachunku: str
-        typ_mieszkania: str
+    
         
     
 
